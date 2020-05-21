@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.Development.json" />
+    <None Remove="appsettings.json" />
+    <None Remove="Scripts\00_Predeployment\00000000-0000-0000-Reset-readme.sql" />
+    <None Remove="Scripts\01_Deployment\00_Schema\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\01_Deployment\00_Schema\00000000-0000-Schema_Data.sql" />
+    <None Remove="Scripts\01_Deployment\01_Schema_Tables\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\01_Deployment\01_Schema_Tables\20200520-0001-SampleTable.sql" />
+    <None Remove="Scripts\01_Deployment\02_Schema_Other\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\01_Deployment\03_Data\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\02_Deploy_Only\01-Schema-Tables\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\02_Deploy_Only\02-Schema-Other\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\02_Deploy_Only\03-Data\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\02_Deploy_Only\03-Data\20200520-0001-SampleTable-Data.sql" />
+    <None Remove="Scripts\02_Deploy_Only\03-Data\20200520-0002-SampleTable-Data.sql" />
+    <None Remove="Scripts\03_Test_Only\01-Schema-Tables\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\03_Test_Only\02-Schema-Other\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\03_Test_Only\03-Data\00000000-0000-0000-readme.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.Development.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Scripts\00_Predeployment\00000000-0000-0000-Reset-readme.sql" />
+    <EmbeddedResource Include="Scripts\01_Deployment\00_Schema\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\01_Deployment\00_Schema\00000000-0000-Schema_Data.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\01_Deployment\01_Schema_Tables\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\01_Deployment\01_Schema_Tables\20200520-0001-SampleTable.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\01_Deployment\02_Schema_Other\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\01_Deployment\03_Data\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\02_Deploy_Only\01-Schema-Tables\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\02_Deploy_Only\02-Schema-Other\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\01_Deployment\03_Data\20200520-0002-SampleTable-Data.sql" />
+    <EmbeddedResource Include="Scripts\01_Deployment\03_Data\20200520-0001-SampleTable-Data.sql" />
+    <EmbeddedResource Include="Scripts\02_Deploy_Only\03-Data\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\03_Test_Only\01-Schema-Tables\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\03_Test_Only\02-Schema-Other\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\03_Test_Only\03-Data\00000000-0000-0000-readme.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup-sqlserver" Version="4.3.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.configuration.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
