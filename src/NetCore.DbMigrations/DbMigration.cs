@@ -10,6 +10,8 @@ namespace NetCore.DbMigrations
 
         public static bool PerformUpgrade(string connectionString)
         {
+            WriteTemplateInfo();
+
             _connectionString = connectionString;
 
             EnsureDatabase.For.SqlDatabase(_connectionString);
@@ -58,6 +60,14 @@ namespace NetCore.DbMigrations
                 //return -1;
                 throw new Exception($"Errors Occurred performing database update!/n{result.Error}");
             }
+        }
+
+        private static void WriteTemplateInfo()
+        {
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("This code is based on the DbUp-Templates project as found on GitHub and is licensed to use and modify, free of charge, and without warranty.");
+            Console.WriteLine("For more info and to get the code, please visit https://github.com/BenVanZyl/DbUp-Templates");
+            Console.WriteLine("----------------------------------------");
         }
     }
 }
