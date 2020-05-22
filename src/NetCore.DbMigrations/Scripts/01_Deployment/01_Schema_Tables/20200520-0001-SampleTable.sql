@@ -1,4 +1,6 @@
-﻿If Not Exists(Select 1 From sys.tables Where name = 'SampleTable')
+﻿/*	### THIS IS A SAMPLE ### */
+
+If Not Exists(Select 1 From sys.tables Where name = 'SampleTable')
 Begin
 	Create Table NetCore.SampleTable
 	(

@@ -8,21 +8,21 @@
   <ItemGroup>
     <None Remove="appsettings.Development.json" />
     <None Remove="appsettings.json" />
-    <None Remove="Scripts\00_Predeployment\00000000-0000-0000-Reset-readme.sql" />
-    <None Remove="Scripts\01_Deployment\00_Schema\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\00_Predeployment\00000000-0000-0000-Reset-readme.md" />
+    <None Remove="Scripts\01_Deployment\00_Schema\00000000-0000-0000-readme.md" />
     <None Remove="Scripts\01_Deployment\00_Schema\00000000-0000-Schema_Data.sql" />
-    <None Remove="Scripts\01_Deployment\01_Schema_Tables\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\01_Deployment\01_Schema_Tables\00000000-0000-0000-readme.md" />
     <None Remove="Scripts\01_Deployment\01_Schema_Tables\20200520-0001-SampleTable.sql" />
-    <None Remove="Scripts\01_Deployment\02_Schema_Other\00000000-0000-0000-readme.sql" />
-    <None Remove="Scripts\01_Deployment\03_Data\00000000-0000-0000-readme.sql" />
-    <None Remove="Scripts\02_Deploy_Only\01-Schema-Tables\00000000-0000-0000-readme.sql" />
-    <None Remove="Scripts\02_Deploy_Only\02-Schema-Other\00000000-0000-0000-readme.sql" />
-    <None Remove="Scripts\02_Deploy_Only\03-Data\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\01_Deployment\02_Schema_Other\00000000-0000-0000-readme.md" />
+    <None Remove="Scripts\01_Deployment\03_Data\00000000-0000-0000-readme.md" />
+    <None Remove="Scripts\02_Deploy_Only\01-Schema-Tables\00000000-0000-0000-readme.md" />
+    <None Remove="Scripts\02_Deploy_Only\02-Schema-Other\00000000-0000-0000-readme.md" />
+    <None Remove="Scripts\02_Deploy_Only\03-Data\00000000-0000-0000-readme.md" />
     <None Remove="Scripts\02_Deploy_Only\03-Data\20200520-0001-SampleTable-Data.sql" />
     <None Remove="Scripts\02_Deploy_Only\03-Data\20200520-0002-SampleTable-Data.sql" />
-    <None Remove="Scripts\03_Test_Only\01-Schema-Tables\00000000-0000-0000-readme.sql" />
-    <None Remove="Scripts\03_Test_Only\02-Schema-Other\00000000-0000-0000-readme.sql" />
-    <None Remove="Scripts\03_Test_Only\03-Data\00000000-0000-0000-readme.sql" />
+    <None Remove="Scripts\03_Test_Only\01-Schema-Tables\00000000-0000-0000-readme.md" />
+    <None Remove="Scripts\03_Test_Only\02-Schema-Other\00000000-0000-0000-readme.md" />
+    <None Remove="Scripts\03_Test_Only\03-Data\00000000-0000-0000-readme.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,27 +33,27 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="Scripts\00_Predeployment\00000000-0000-0000-Reset-readme.sql" />
-    <EmbeddedResource Include="Scripts\01_Deployment\00_Schema\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\00_Predeployment\00000000-0000-0000-Reset-readme.md" />
+    <EmbeddedResource Include="Scripts\01_Deployment\00_Schema\00000000-0000-0000-readme.md" />
     <EmbeddedResource Include="Scripts\01_Deployment\00_Schema\00000000-0000-Schema_Data.sql" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Scripts\01_Deployment\01_Schema_Tables\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\01_Deployment\01_Schema_Tables\00000000-0000-0000-readme.md" />
     <EmbeddedResource Include="Scripts\01_Deployment\01_Schema_Tables\20200520-0001-SampleTable.sql" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Scripts\01_Deployment\02_Schema_Other\00000000-0000-0000-readme.sql" />
-    <EmbeddedResource Include="Scripts\01_Deployment\03_Data\00000000-0000-0000-readme.sql" />
-    <EmbeddedResource Include="Scripts\02_Deploy_Only\01-Schema-Tables\00000000-0000-0000-readme.sql" />
-    <EmbeddedResource Include="Scripts\02_Deploy_Only\02-Schema-Other\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\01_Deployment\02_Schema_Other\00000000-0000-0000-readme.md" />
+    <EmbeddedResource Include="Scripts\01_Deployment\03_Data\00000000-0000-0000-readme.md" />
+    <EmbeddedResource Include="Scripts\02_Deploy_Only\01-Schema-Tables\00000000-0000-0000-readme.md" />
+    <EmbeddedResource Include="Scripts\02_Deploy_Only\02-Schema-Other\00000000-0000-0000-readme.md" />
     <EmbeddedResource Include="Scripts\01_Deployment\03_Data\20200520-0002-SampleTable-Data.sql" />
     <EmbeddedResource Include="Scripts\01_Deployment\03_Data\20200520-0001-SampleTable-Data.sql" />
-    <EmbeddedResource Include="Scripts\02_Deploy_Only\03-Data\00000000-0000-0000-readme.sql" />
-    <EmbeddedResource Include="Scripts\03_Test_Only\01-Schema-Tables\00000000-0000-0000-readme.sql" />
-    <EmbeddedResource Include="Scripts\03_Test_Only\02-Schema-Other\00000000-0000-0000-readme.sql" />
-    <EmbeddedResource Include="Scripts\03_Test_Only\03-Data\00000000-0000-0000-readme.sql" />
+    <EmbeddedResource Include="Scripts\02_Deploy_Only\03-Data\00000000-0000-0000-readme.md" />
+    <EmbeddedResource Include="Scripts\03_Test_Only\01-Schema-Tables\00000000-0000-0000-readme.md" />
+    <EmbeddedResource Include="Scripts\03_Test_Only\02-Schema-Other\00000000-0000-0000-readme.md" />
+    <EmbeddedResource Include="Scripts\03_Test_Only\03-Data\00000000-0000-0000-readme.md" />
   </ItemGroup>
 
   <ItemGroup>
