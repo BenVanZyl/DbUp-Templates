@@ -11,10 +11,8 @@ namespace NetCore.DbMigrations
         static void Main(string[] args)
         {
             _connectionString = Configuration.GetConnectionString("DefaultConnection");
-
             DbMigration.PerformUpgrade(_connectionString);
-
-           // return 0;
+            // return 0;
         }
 
         private static IConfigurationRoot _configuration = null;
@@ -33,6 +31,6 @@ namespace NetCore.DbMigrations
                 return _configuration;
             }
             set { _configuration = value; }
-        }        
+        }
     }
 }
