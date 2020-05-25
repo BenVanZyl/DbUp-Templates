@@ -8,7 +8,7 @@ namespace Net47.DbMigrations.Test
 {
     public class DbMigrationTests
     {
-        private const string SchemaScriptsPath = @"..\..\..\..\NetCore.DbMigrations\Scripts";
+        private const string SchemaScriptsPath = @"..\..\..\Net47.DbMigrations\Scripts";
 
         [Fact]
         public void VerifyAllScriptsEmbedded()
