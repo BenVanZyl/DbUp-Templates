@@ -107,21 +107,31 @@
     <None Include="packages.config" />
     <None Include="Scripts\00_Predeployment\00000000-0000-0000-Reset-readme.md" />
     <None Include="Scripts\01_Deployment\00_Schema\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\01_Deployment\01_Schema_Tables\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\01_Deployment\02_Schema_Other\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\01_Deployment\03_Data\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\02_Deploy_Only\01-Schema-Tables\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\02_Deploy_Only\02-Schema-Other\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\02_Deploy_Only\03-Data\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\03_Test_Only\01-Schema-Tables\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\03_Test_Only\02-Schema-Other\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\03_Test_Only\03-Data\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\01_Deployment\01_Tables\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\01_Deployment\02_Functions\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\01_Deployment\03_Views\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\01_Deployment\04_Stored_Procedures\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\01_Deployment\05_Data\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Deploy_Only\00_Schema\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Deploy_Only\01-Tables\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Deploy_Only\02_Functions\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Deploy_Only\03_Views\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Deploy_Only\04_Stored_Procedures\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Deploy_Only\05-Data\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Test_Only\00_Schema\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Test_Only\01-Tables\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Test_Only\02_Functions\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Test_Only\03_Views\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Test_Only\04_Stored_Procedures\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Test_Only\05-Data\00000000-0000-0000-readme.md" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Scripts\01_Deployment\00_Schema\00000000-0000-Schema_Data.sql" />
-    <EmbeddedResource Include="Scripts\01_Deployment\01_Schema_Tables\20200520-0001-SampleTable.sql" />
-    <EmbeddedResource Include="Scripts\01_Deployment\03_Data\20200520-0001-SampleTable-Data.sql" />
-    <EmbeddedResource Include="Scripts\01_Deployment\03_Data\20200520-0002-SampleTable-Data.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\01_Deployment\01_Tables\20200520-0001-SampleTable.sql" />
+    <EmbeddedResource Include="Scripts\01_Deployment\05_Data\20200520-0001-SampleTable-Data.sql" />
+    <EmbeddedResource Include="Scripts\01_Deployment\05_Data\20200520-0002-SampleTable-Data.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

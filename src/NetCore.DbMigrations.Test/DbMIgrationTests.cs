@@ -10,6 +10,9 @@ namespace NetCore.DbMigrations.Test
     {
         private const string SchemaScriptsPath = @"..\..\..\..\NetCore.DbMigrations\Scripts";
 
+        /// <summary>
+        /// Error in this test means there is a script that has not been marked as embedded resource.  Checck the error message and scripts.
+        /// </summary>
         [Fact]
         public void VerifyAllScriptsEmbedded()
         {
@@ -21,7 +24,6 @@ namespace NetCore.DbMigrations.Test
             {
                 scriptsEmbedded.ShouldContain(e => e.EndsWith(f), "Script file: " + f);
             }
-
         }
 
 
