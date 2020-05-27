@@ -17,18 +17,18 @@ namespace NetCore.DbMigrations
             EnsureDatabase.For.SqlDatabase(_connectionString);
 
             // scripts that reset already run scripts in order to run updates on the speciifed object (table, proc, view, function, etc)
-            DeployScripts(Tokens.Predeployment);
+            DeployScripts(ScriptTokens.Predeployment);
 
             // actual deployment scripts
-            DeployScripts(Tokens.Deployment);
+            DeployScripts(ScriptTokens.Deployment);
 
             // only run these scripts when actually doing a deployment but not when doing testing.
             if (!RunningAs.UnitTest)
-                DeployScripts(Tokens.DeployOnly);
+                DeployScripts(ScriptTokens.DeployOnly);
 
             // only run these when testing
             if (RunningAs.UnitTest)
-                DeployScripts(Tokens.TestOnly);
+                DeployScripts(ScriptTokens.TestOnly);
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Success!");
