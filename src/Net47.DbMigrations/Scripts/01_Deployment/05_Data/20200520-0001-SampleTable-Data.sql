@@ -20,9 +20,9 @@ Begin
     From @data
     Where rowId = @rowId
 
-    if Not Exists(Select 1 From Net47.SampleTable Where Name = @nameValue)
+    if Not Exists(Select 1 From Net47.SampleTable47 Where Name = @nameValue)
     Begin
-        Insert Into Net47.SampleTable
+        Insert Into Net47.SampleTable47
             (   CreateUserId,
                 CreateDateTime,
                 ModifyUserId,
