@@ -11,7 +11,7 @@ namespace NetCore.DbMigrations
         static void Main(string[] args)
         {
             _connectionString = Configuration.GetConnectionString("DefaultConnection");
-            DbMigration.PerformUpgrade(_connectionString);
+            ScriptExecutor.PerformUpgrade(_connectionString);
             // return 0;
         }
 

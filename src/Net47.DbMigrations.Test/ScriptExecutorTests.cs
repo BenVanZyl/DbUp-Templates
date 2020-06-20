@@ -18,7 +18,7 @@ namespace Net47.DbMigrations.Test
         {
             //var generalScriptsPath = Assembly.GetExecutingAssembly().RelativePath(SchemaScriptsPath);
             var scriptsOnDisk = Directory.GetFiles(SchemaScriptsPath, "*.sql", SearchOption.AllDirectories).Select(Path.GetFileName);
-            var scriptsEmbedded = Assembly.GetAssembly(typeof(Net47.DbMigrations.DbMigration)).GetManifestResourceNames();
+            var scriptsEmbedded = Assembly.GetAssembly(typeof(Net47.DbMigrations.ScriptExecutor)).GetManifestResourceNames();
 
             foreach (var f in scriptsOnDisk)
             {

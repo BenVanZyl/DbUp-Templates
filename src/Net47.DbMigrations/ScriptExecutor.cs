@@ -1,10 +1,11 @@
 ﻿using DbUp;
 using System;
+using System.Linq;
 using System.Reflection;
 
-namespace NetCore.DbMigrations
+namespace Net47.DbMigrations
 {
-    public static class DbMigration
+    public static class ScriptExecutor
     {
         private static string _connectionString;
 
@@ -43,7 +44,7 @@ namespace NetCore.DbMigrations
                 DeployChanges.To
                     .SqlDatabase(_connectionString)
                     .WithTransactionPerScript()
-                    .WithScriptsEmbeddedInAssembly(Assembly.GetExecutingAssembly(), s => s.Contains(stageToken, StringComparison.OrdinalIgnoreCase))
+                    .WithScriptsEmbeddedInAssembly(Assembly.GetExecutingAssembly(), s => s.Contains(stageToken)) //, StringComparison.OrdinalIgnoreCase))
                     .LogToConsole()
                     .Build();
 

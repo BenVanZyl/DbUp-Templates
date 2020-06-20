@@ -12,7 +12,7 @@ namespace Net47.DbMigrations
         static void Main(string[] args)
         {
             _connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-            DbMigration.PerformUpgrade(_connectionString);
+            ScriptExecutor.PerformUpgrade(_connectionString);
 
             Console.ReadKey();
         }
