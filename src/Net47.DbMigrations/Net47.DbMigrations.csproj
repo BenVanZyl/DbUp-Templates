@@ -103,7 +103,9 @@
     <Compile Include="ScriptTokens.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Content Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Scripts\00_Predeployment\00000000-0000-0000-Reset-readme.md" />
     <None Include="Scripts\01_Deployment\00_Schema\00000000-0000-0000-readme.md" />

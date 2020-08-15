@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System;
+using System.Linq;
 
 namespace NetCore.DbMigrations
 {
@@ -9,7 +10,11 @@ namespace NetCore.DbMigrations
 
         static void Main(string[] args)
         {
-            _connectionString = Configuration.GetConnectionString("DefaultConnection");
+            if (args.Count() == 1)
+                _connectionString = args[0];
+            else
+                _connectionString = Configuration.GetConnectionString("DefaultConnection");
+
             ScriptExecutor.PerformUpgrade(_connectionString);
             // return 0;
         }
