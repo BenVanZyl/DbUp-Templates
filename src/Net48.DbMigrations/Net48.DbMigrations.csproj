@@ -6,12 +6,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B91DBD7B-B9DD-4F96-B0B3-F2DAAD46C6F7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Net47.DbMigrations</RootNamespace>
-    <AssemblyName>Net47.DbMigrations</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>Net48.DbMigrations</RootNamespace>
+    <AssemblyName>Net48.DbMigrations</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommandLine, Version=2.8.0.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommandLineParser.2.8.0\lib\net461\CommandLine.dll</HintPath>
+    </Reference>
     <Reference Include="dbup-core, Version=4.3.1.0, Culture=neutral, PublicKeyToken=4b419c53bdfd4cbf, processorArchitecture=MSIL">
       <HintPath>..\..\packages\dbup-core.4.3.1\lib\net45\dbup-core.dll</HintPath>
     </Reference>
@@ -108,32 +112,37 @@
     </Content>
     <None Include="packages.config" />
     <None Include="Scripts\00_Predeployment\00000000-0000-0000-Reset-readme.md" />
-    <None Include="Scripts\01_Deployment\00_Schema\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\01_Deployment\01_Tables\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\01_Deployment\02_Functions\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\01_Deployment\03_Views\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\01_Deployment\04_Stored_Procedures\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\01_Deployment\05_Data\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\02_Deploy_Only\00_Schema\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\02_Deploy_Only\01-Tables\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\02_Deploy_Only\02_Functions\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\02_Deploy_Only\03_Views\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\02_Deploy_Only\04_Stored_Procedures\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\02_Deploy_Only\05-Data\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\03_Test_Only\00_Schema\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\03_Test_Only\01-Tables\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\03_Test_Only\02_Functions\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\03_Test_Only\03_Views\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\03_Test_Only\04_Stored_Procedures\00000000-0000-0000-readme.md" />
-    <None Include="Scripts\03_Test_Only\05-Data\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\01_DbObjects\00_Schema\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\01_DbObjects\01_Tables\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\01_DbObjects\02_Functions\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\01_DbObjects\03_Views\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\01_DbObjects\04_Stored_Procedures\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Data\All\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Data\LocalDev\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Data\Production\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Data\Testing\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\02_Data\Uat\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Deploy_Only\00_Schema\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Deploy_Only\01-Tables\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Deploy_Only\02_Functions\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Deploy_Only\03_Views\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Deploy_Only\04_Stored_Procedures\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\03_Deploy_Only\05-Data\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\04_Test_Only\00_Schema\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\04_Test_Only\01-Tables\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\04_Test_Only\02_Functions\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\04_Test_Only\03_Views\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\04_Test_Only\04_Stored_Procedures\00000000-0000-0000-readme.md" />
+    <None Include="Scripts\04_Test_Only\05-Data\00000000-0000-0000-readme.md" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Scripts\01_Deployment\00_Schema\00000000-0000-Schema_Data.sql" />
+    <EmbeddedResource Include="Scripts\01_DbObjects\00_Schema\00000000-0000-Schema_Data.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Scripts\01_Deployment\01_Tables\20200520-0001-SampleTable.sql" />
-    <EmbeddedResource Include="Scripts\01_Deployment\05_Data\20200520-0001-SampleTable-Data.sql" />
-    <EmbeddedResource Include="Scripts\01_Deployment\05_Data\20200520-0002-SampleTable-Data.sql" />
+    <EmbeddedResource Include="Scripts\01_DbObjects\01_Tables\20200520-0001-SampleTable.sql" />
+    <EmbeddedResource Include="Scripts\02_Data\All\20200520-0001-SampleTable-Data.sql" />
+    <EmbeddedResource Include="Scripts\02_Data\All\20200520-0002-SampleTable-Data.sql" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

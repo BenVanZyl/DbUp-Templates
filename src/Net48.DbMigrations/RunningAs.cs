@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Net47.DbMigrations
+namespace Net48.DbMigrations
 {
     public static class RunningAs
     {

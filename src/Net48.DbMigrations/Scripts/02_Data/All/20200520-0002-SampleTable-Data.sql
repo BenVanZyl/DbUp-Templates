@@ -12,7 +12,7 @@ Insert Into @data (NameValue) Values
     ('Something for'),
     ('Nothing')
 
-Insert Into Net47.SampleTable47
+Insert Into Net48.SampleTable48
     (   CreateUserId,
         CreateDateTime,
         ModifyUserId,
@@ -25,4 +25,4 @@ Insert Into Net47.SampleTable47
             GetDate(),
             d.NameValue
     From @data d
-    Where Not Exists (Select 1 From Net47.SampleTable47 Where Name =  d.NameValue)
+    Where Not Exists (Select 1 From Net48.SampleTable48 Where Name =  d.NameValue)

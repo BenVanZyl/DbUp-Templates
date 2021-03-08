@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.DbMigrations", "src
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNetCore", "DotNetCore", "{BDF146CD-2AEC-4587-BF14-776DA53C88EA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNet47", "DotNet47", "{B3E62664-6936-42F3-AE6A-F5EEBFCB0FCC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNet48", "DotNet48", "{B3E62664-6936-42F3-AE6A-F5EEBFCB0FCC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.DbMigrations.Test", "src\NetCore.DbMigrations.Test\NetCore.DbMigrations.Test.csproj", "{17F4E7F8-B650-4538-AE20-3F9EF2DBC796}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net47.DbMigrations", "src\Net47.DbMigrations\Net47.DbMigrations.csproj", "{B91DBD7B-B9DD-4F96-B0B3-F2DAAD46C6F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net48.DbMigrations", "src\Net48.DbMigrations\Net48.DbMigrations.csproj", "{B91DBD7B-B9DD-4F96-B0B3-F2DAAD46C6F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net47.DbMigrations.Test", "src\Net47.DbMigrations.Test\Net47.DbMigrations.Test.csproj", "{A1F365DC-50D5-489F-97F6-19793AA5A712}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net48.DbMigrations.Test", "src\Net48.DbMigrations.Test\Net48.DbMigrations.Test.csproj", "{A1F365DC-50D5-489F-97F6-19793AA5A712}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{3E38BBBA-89C6-4E3E-8A3A-8CCA7046F731}"
 	ProjectSection(SolutionItems) = preProject
