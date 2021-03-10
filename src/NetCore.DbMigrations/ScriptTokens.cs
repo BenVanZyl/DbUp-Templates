@@ -10,10 +10,27 @@ namespace NetCore.DbMigrations
     /// </summary>
     public static class ScriptTokens
     {
-        public static string Predeployment => "00_Predeployment";
-        public static string Deployment => "01_Deployment";
-        public static string DeployOnly => "02_Deploy_Only";
-        public static string TestOnly => "03_Test_Only";
-        
+        public const string Predeployment = "00_Predeployment";
+
+        public const string DeployDbObjects = "01_DbObjects";
+
+        public const string DeployDataAllEnvironments = "02_Data.All";
+        public const string DeployDataLocalDev = "02_Data.LocalDev";
+        public const string DeployDataTesting = "02_Data.Testing";
+        public const string DeployDataUat = "02_Data.Uat";
+        public const string DeployDataProduction = "02_Data.Production";
+
+        public const string DeployOnly = "03_Deploy_Only";
+        public const string TestOnly = "04_Test_Only";
+
+        //public const string Rollback = "99_Rollback";  //TODO: Investigate rollback options and implementations
+
+        public enum DeploymentEnvironments
+        {
+            LocalDev,
+            Testing,
+            Uat,
+            Production
+        }
     }
 }

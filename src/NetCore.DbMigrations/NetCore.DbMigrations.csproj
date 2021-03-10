@@ -8,10 +8,10 @@
   <ItemGroup>
     <None Remove="appsettings.Development.json" />
     <None Remove="appsettings.json" />
-    <None Remove="Scripts\01_Deployment\00_Schema\00000000-0000-Schema_Data.sql" />
-    <None Remove="Scripts\01_Deployment\01_Tables\20200520-0001-SampleTable.sql" />
-    <None Remove="Scripts\02_Deploy_Only\05-Data\20200520-0001-SampleTable-Data.sql" />
-    <None Remove="Scripts\02_Deploy_Only\05-Data\20200520-0002-SampleTable-Data.sql" />
+    <None Remove="Scripts\01_DbObjects\00_Schema\00000000-0000-Schema_Data.sql" />
+    <None Remove="Scripts\01_DbObjects\01_Tables\20200520-0001-SampleTable.sql" />
+    <None Remove="Scripts\03_Deploy_Only\05-Data\20200520-0001-SampleTable-Data.sql" />
+    <None Remove="Scripts\03_Deploy_Only\05-Data\20200520-0002-SampleTable-Data.sql" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,16 +23,16 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="Scripts\01_Deployment\00_Schema\00000000-0000-Schema_Data.sql" />
+    <EmbeddedResource Include="Scripts\01_DbObjects\00_Schema\00000000-0000-Schema_Data.sql" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Scripts\01_Deployment\01_Tables\20200520-0001-SampleTable.sql" />
+    <EmbeddedResource Include="Scripts\01_DbObjects\01_Tables\20200520-0001-SampleTable.sql" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Scripts\01_Deployment\05_Data\20200520-0002-SampleTable-Data.sql" />
-    <EmbeddedResource Include="Scripts\01_Deployment\05_Data\20200520-0001-SampleTable-Data.sql" />
+    <EmbeddedResource Include="Scripts\02_Data\All\20200520-0002-SampleTable-Data.sql" />
+    <EmbeddedResource Include="Scripts\02_Data\All\20200520-0001-SampleTable-Data.sql" />
   </ItemGroup>
 
   <ItemGroup>
